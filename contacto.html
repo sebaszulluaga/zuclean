@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./limpieza.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+  <style>
+    /* Estilos CSS */
+    * {
+      font-family: 'Quicksand', sans-serif;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #313131;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    nav {
+      background-color: #FF6917;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 25px;
+      font-size: 27px;
+      transition: font-size 0.3s, color 0.3s;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a:hover {
+      font-size: 33px;
+      color: #313131;
+    }
+
+    main {
+      width: auto;
+      min-height: 520px;
+      padding: 30px;
+      background-color: #f2f2f2;
+      color: #fff;
+      display: flex;
+      justify-content: center; /* Centra horizontalmente */
+      align-items: center; /* Centra verticalmente */
+      flex-wrap: wrap; /* Añade salto de línea a los elementos hijos */
+      
+    }
+
+    .form-container {
+      width: auto;
+      color: #313131;
+      background-color: #f2f2f2;
+      padding: 40px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      margin: 0 35px;
+      overflow: hidden;
+      margin-bottom: 30px; /* Añade espacio entre elementos */
+      margin-right: auto; /* Agrega esta línea */
+      margin-left: auto; /* Agrega esta línea */
+    }
+
+    .form-container h2 {
+      font-size: 30px;
+      color: #313131;
+    }
+
+    .form-container input,
+    .form-container textarea {
+      width: 90%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .form-container button {
+      background-color: #fd7228;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .map-container {
+      width: auto;
+      color: #313131;
+      background-color: #f2f2f2;
+      padding: 40px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      margin: 0 35px;
+      overflow: hidden;
+      margin-right: auto; /* Agrega esta línea */
+      margin-left: auto; /* Agrega esta línea */
+    }
+
+    @media only screen and (max-width: 690px) {
+      .form-container,
+      .map-container {
+        width: 90%; /* Cambia el ancho de los elementos */
+      }
+    }
+    
+    @media only screen and (max-width: 519px) {
+      .services-container {
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+      }
+
+      .floating-buttons {
+        position: fixed;
+        right: 10px;
+        top: 20%;
+        transform: translateY(-50%);
+        z-index: 9999;
+      }
+
+      nav {
+        margin-top: 1px solid #fff;
+        background-color: #FE5825;
+        color: #fff;
+        padding: 12x;
+        text-align: center;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 8px;
+        font-size: 19px;
+        transition: font-size 0.3s, color 0.3s;
+      }
+
+      .service {
+        flex-basis: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 459px) {
+      .slick-slide2{
+      display: none;
+      }
+      nav a {
+        font-size: 15px
+      }
+      .container{
+        display: none;
+        height: 100px;
+      }
+      .floating-buttons {
+        top: 50%;
+        right: 1px;
+        transform: translate(0, -50%);
+      }
+
+      .ball img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .service {
+        font-size: 21px;
+      }
+      .service-title {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .service-description {
+      font-size: 17px;
+      color: #333;
+
+    }
+    .service-button {
+      font-size: 14px;
+    }
+    header{
+      padding: 3px;
+    }
+    header img{
+      width: 110px;
+    }
+    footer p {
+      font-size: 10px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 10px;
+    }
+    .About{
+      height: 260px;
+      width: 362px;
+    }
+    footer img {
+      width: 60px;
+    }
+    .floating-buttons {
+      
+        position: fixed;
+        right: 20px;
+        top: 50%;
+
+    }
+    .slick-slide{
+      background-image: url('./flyersmall.png')
+    } 
+    .floating-buttons img{
+      padding: -20px;
+      width: 35px;
+    }
+  
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Empresa de Limpieza</h1>
+  </header>
+
+  <nav>
+    <a href="./index.html">Inicio</a>
+    <a href="./index.html">Servicios</a>
+    <a href="./index.html">Contacto</a>
+  </nav>
+
+  <main>
+    <div class="form-container">
+      <h2>Formulario de Contacto</h2>
+      <form action="enviar_formulario.php" method="post">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="correo" placeholder="Correo electrónico" required>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <div class="map-container">
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.085453955442!2d-81.63892439057999!3d26.22641278915415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88db03b2789c553b%3A0x7082a55467b87bb!2s170%2015th%20St%20SW%2C%20Naples%2C%20FL%2034117!5e0!3m2!1ses!2sus!4v1687397370163!5m2!1ses!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="info">
+        <p><strong>Teléfono de contacto:</strong> <br> 123456789 </p>
+        <p><strong>Correo electrónico:</strong> <br> info@ejemplo.com </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    
+    <p>Derechos de autor &copy; 2023 Empresa de Limpieza. Todos los derechos reservados. Creator @Sebaszulluaga</p>
+  </footer>
+</body>
+</html>
