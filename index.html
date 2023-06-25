@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./limpieza.png" type="image/png">
-  <title>Empresa de Limpieza</title>
+  <link rel="icon" href="./escoba.png" type="image/png">
+  <title>ZU</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,11 +18,9 @@
     /* Estilos CSS */
     * {
       font-family: 'Quicksand', sans-serif;
-
     }
 
     body {
-
       margin: 0;
       padding: 0;
     }
@@ -35,25 +33,12 @@
       color: #fff;
       width: 100%;
     }
-    
-    header h1 {
-      text-shadow: 4px 2px 4px #ec572d;
-      margin-top: auto;
-      font-style:unset;
-      
-      margin-bottom: auto;
-      background: linear-gradient(to right, #fd5304, #FF9800);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    padding: 12px 20px;
-      color:#b43900;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      font-size: 70px;
+
+    header img {
       margin-left: auto;
       margin-right: auto;
-    
+      width: 160px;
+      height: 160px;
     }
 
     nav {
@@ -88,6 +73,10 @@
       color: #fff;
       padding: 10px;
       text-align: center;
+    }
+    header img{
+      margin-left: auto;
+      margin-right: auto;
     }
 
     footer p {
@@ -188,8 +177,6 @@
       color: #313131;
     }
 
-
-
     .service-title {
       color: #333;
       font-size: 34px;
@@ -199,7 +186,6 @@
     .service-description {
       font-size: 21px;
       color: #333;
-
     }
 
     nav ul {
@@ -218,7 +204,7 @@
     }
 
     .service-button {
-      background-color:#FE5825;
+      background-color: #FE5825;
       color: #ffffff;
       border: none;
       padding: 10px 20px;
@@ -239,7 +225,6 @@
 
     }
 
-
     .About h1 {
       padding-top: 10px;
       padding-bottom: 10px;
@@ -253,12 +238,11 @@
 
     .ball {
       margin-right: 10px;
-      border: 1px solid #d0d0d0;
-      padding: 10px;
+      padding: 30px;
       padding-top: 15px;
-      width: 15%;
+      width: 190px;
       padding-bottom: 15%;
-      border-radius: 50%;
+   
       overflow: hidden;
       position: relative;
     }
@@ -301,8 +285,6 @@
       nav a {
         font-size: 22px
       }
-
-
     }
 
     @media only screen and (max-width: 519px) {
@@ -342,16 +324,23 @@
     }
 
     @media only screen and (max-width: 459px) {
-      .slick-slide2{
-      display: none;
+      .slick-slide2 {
+        display: none;
       }
+      header img{
+        width: 132px;
+        height: 125px;
+      }
+
       nav a {
         font-size: 15px
       }
-      .container{
+
+      .container {
         display: none;
         height: 100px;
       }
+
       .floating-buttons {
         top: 50%;
         right: 1px;
@@ -362,66 +351,75 @@
         max-width: 100%;
         height: auto;
       }
-      
+
       .service {
         font-size: 21px;
       }
+
       .service-title {
-      color: #333;
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
 
-    .service-description {
-      font-size: 17px;
-      color: #333;
+      .service-description {
+        font-size: 17px;
+        color: #333;
 
-    }
-    .service-button {
-      font-size: 14px;
-    }
-    header{
-      padding: 3px;
-    }
-    header img{
-      width: 110px;
-    }
-    footer p {
-      font-size: 10px;
-      margin-top: auto;
-      margin-bottom: auto;
-      margin-right: 10px;
-    }
-    .About{
-      height: 260px;
-      width: 362px;
-    }
-    footer img {
-      width: 60px;
-    }
-    .floating-buttons {
-      
+      }
+
+      .service-button {
+        font-size: 14px;
+      }
+
+      header {
+        padding: 3px;
+      }
+
+      header img {
+        width: 110px;
+      }
+
+      footer p {
+        font-size: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 10px;
+      }
+
+      .About {
+        height: 260px;
+        width: 362px;
+      }
+
+      footer img {
+        width: 60px;
+      }
+
+      .floating-buttons {
+
         position: fixed;
         right: 20px;
         top: 50%;
 
+      }
+
+      .slick-slide {
+        background-image: url('./flyersmall.png')
+      }
+
+      .floating-buttons img {
+        padding: -20px;
+        width: 35px;
+      }
+
     }
-    .slick-slide{
-      background-image: url('./flyersmall.png')
-    } 
-    .floating-buttons img{
-      padding: -20px;
-      width: 35px;
-    }
-  
-  }
   </style>
 </head>
 
 <body>
   <header>
-    
-    <h1><img src="./limpieza.png" alt="logo" width="90px" height="90px"> ZU CLEAN</h1>
+    <img src="./image/logo.png" alt="logo"> 
   </header>
 
   <nav>
@@ -433,27 +431,21 @@
   </nav>
 
   <div class="slick-carousel">
-    <div class="slick-slide" style="background-image: url('./Flyersmall.png')">
+    <div class="slick-slide" style="background-image: url('./image/Flyersmall.png')">
       <div class="carousel-caption">
-        <h2>Título de la imagen 1</h2>
-        <p>Descripción de la imagen 1.</p>
       </div>
     </div>
-    <div class="slick-slide2" style="background-image: url('./Flyersmall.png')">
+    <div class="slick-slide2" style="background-image: url('./image/flyerTwoSmall.png')">
       <div class="carousel-caption">
-        <h2>Título de la imagen 2</h2>
-        <p>Descripción de la imagen 2.</p>
       </div>
     </div>
-    <div class="slick-slide" style="background-image: url('./Flyersmall.png')">
+    <div class="slick-slide" style="background-image: url('./image/flyerThreeSmall.png')">
       <div class="carousel-caption">
-        <h2>Título de la imagen 3</h2>
-        <p>Descripción de la imagen 3.</p>
       </div>
     </div>
   </div>
-  
-  
+
+
 
   <main id="t">
     <div class="About">
@@ -463,13 +455,13 @@
       </p>
       <div class="container">
         <div class="ball">
-          <img src="imagen1.jpg" alt="Imagen 1">
+          <img src="./image/escoba.png" alt="Imagen 1" width="100px" height="100px">
         </div>
         <div class="ball">
-          <img src="imagen2.jpg" alt="Imagen 2">
+          <img src="./image/limpieza.png" alt="Imagen 2">
         </div>
         <div class="ball">
-          <img src="imagen3.jpg" alt="Imagen 3">
+          <img src="./image/limpiador.png" alt="Imagen 3">
         </div>
 
       </div>
@@ -478,31 +470,28 @@
     <!-- Contenido principal -->
     <div class="services-container">
       <div class="service">
-        <i class="service-icon"><img src="./equipo-de-limpieza.png" alt="limpieza dosmestica" width="116px"></i>
-        <h3 class="service-title">Limpieza dosmestica</h3>
-        <p class="service-description">Ofrecemos servicios de limpieza de alta calidad para hogares, oficinas y locales
-          comerciales.</p>
-        <a href="./contacto.html"> <button class="service-button">Obtén un estimado gratis</button></a>
+        <i class="service-icon"><img src="./image/equipo-de-limpieza.png" alt="limpieza dosmestica" width="116px"></i>
+        <h3 class="service-title">Domestic cleaning</h3>
+        <p class="service-description">We offer high quality cleaning services for homes, offices and commercial premises.</p>
+        <a href="./contacto.html"> <button class="service-button">Get a free estimate</button></a>
       </div>
       <div class="service">
-        <i class="service-icon"><img src="./herramientas-de-limpieza.png" alt="limpieza de pisos" width="116px"></i>
-        <h3 class="service-title">Limpieza de pisos</h3>
-        <p class="service-description">Realizamos servicios de limpieza de pisos y superficies para lograr un aspecto
-          impecable con tecnologia de punta.</p>
-        <a href="./contacto.html"> <button class="service-button">Obtén un estimado gratis</button></a>
+        <i class="service-icon"><img src="./image/herramientas-de-limpieza.png" alt="limpieza de pisos" width="116px"></i>
+        <h3 class="service-title">Floor cleaning</h3>
+        <p class="service-description">We perform floor and surface cleaning services to achieve an impeccable appearance with state-of-the-art technology.</p>
+        <a href="./contacto.html"> <button class="service-button">Get a free estimate</button></a>
       </div>
       <div class="service">
-        <i class="service-icon"><img src="./fregona.png" alt="fregona" width="116px"></i>
-        <h3 class="service-title">Pulido y brillado de pisos</h3>
-        <p class="service-description">Contamos con técnicas de pulido y brillado de pisos especializadas para devolver
-          el brillo y la belleza a tus superficies.</p>
-        <a href="./contacto.html"> <button class="service-button">Obtén un estimado gratis</button></a>
+        <i class="service-icon"><img src="./image/fregona.png" alt="fregona" width="116px"></i>
+        <h3 class="service-title">Polishing and shining of floors</h3>
+        <p class="service-description">We have specialized floor polishing and shining techniques to restore shine and beauty to your surfaces.</p>
+        <a href="./contacto.html"> <button class="service-button">Get a free estimate</button></a>
       </div>
       <div class="service">
-        <i class="service-icon"><img src="./piso-mojado.png" alt="otros servisios" width="116px"></i>
-        <h3 class="service-title">Otros servicios</h3>
-        <p class="service-description">Pregunta por los otros servicios de limpieza.</p>
-        <a href="./contacto.html"> <button class="service-button">Otros servicios</button></a>
+        <i class="service-icon"><img src="./image/piso-mojado.png" alt="otros servisios" width="116px"></i>
+        <h3 class="service-title">Other services</h3>
+        <p class="service-description">Ask about the other cleaning services.</p>
+        <a href="./contacto.html"> <button class="service-button">Other services</button></a>
 
       </div>
     </div>
@@ -511,14 +500,14 @@
 
   <footer>
     <p>Copyright &copy; 2023 ZU clean and zuluaga group. All rights reserved. Creator @Sebaszulluaga</p>
-    <img src="./z (1).png" alt="zu">
-    <img src="./zu clean.png" alt="">
+    <img src="./image/z (1).png" alt="zu">
+    <img src="./image/zu clean.png" alt="">
   </footer>
   <!-- Botones flotantes -->
   <div class="floating-buttons">
-    <a href="https://www.whatsapp.com"><img src="./ICONWHATSAPP.png" alt="WhatsApp"></a>
-    <a href="https://www.instagram.com"><img src="./icons8-instagram-65.png" alt="Instagram"></a>
-    <a href="https://www.instagram.com"><img src="./icons8-fotos-65.png" alt="Instagram"></a>
+    <a href="https://wa.link/0r8lmw"><img src="./image/ICONWHATSAPP.png" alt="WhatsApp"></a>
+    <a href="https://www.instagram.com"><img src="./image/icons8-instagram-65.png" alt="Instagram"></a>
+    <a href="https://www.instagram.com"><img src="./image/icons8-fotos-65.png" alt="Instagram"></a>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
