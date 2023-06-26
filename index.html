@@ -29,19 +29,30 @@
       display: flex;
       background-color: #F4F1EC;
       padding: 1px;
-      text-align: center;
       color: #fff;
       width: 100%;
+      height: 150px;
+      position: fixed;
+      transition: top 0.3s;
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
     }
 
     header img {
-      margin-left: auto;
-      margin-right: auto;
-      width: 160px;
-      height: 160px;
+      position: fixed;
+      z-index: 9999;
+
+      width: 150px;
+      height: 150px;
     }
 
     nav {
+      position: fixed;
+      transition: top 0.3s;
+      z-index: 9999;
+      width: 100%;
+      margin-top: 150px;
       background-color: #FE5825;
       color: #fff;
       padding: 4px;
@@ -52,12 +63,12 @@
       color: #fff;
       text-decoration: none;
       margin: 0 25px;
-      font-size: 27px;
+      font-size: 22px;
       transition: font-size 0.3s, color 0.3s;
     }
 
     nav a:hover {
-      font-size: 33px;
+      font-size: 29px;
       color: #313131;
     }
 
@@ -74,7 +85,8 @@
       padding: 10px;
       text-align: center;
     }
-    header img{
+
+    header img {
       margin-left: auto;
       margin-right: auto;
     }
@@ -86,11 +98,12 @@
     }
 
     footer img {
-      width: 150px;
+      width: 100px;
     }
 
     .slick-slide {
-      height: 580px;
+      margin-top: 184px;
+      height: 510px;
       background-size: cover;
       background-position: center;
     }
@@ -179,12 +192,12 @@
 
     .service-title {
       color: #333;
-      font-size: 34px;
+      font-size: 28px;
       margin-bottom: 10px;
     }
 
     .service-description {
-      font-size: 21px;
+      font-size: 19px;
       color: #333;
     }
 
@@ -218,10 +231,10 @@
     .About {
       display: block;
       text-align: center;
-      background-color: #f2f2f2;
+      background-color: #F4F1EC;
       color: #313131;
-      height: 420px;
-      padding-top: 20px;
+
+      padding-top: 10px;
 
     }
 
@@ -242,7 +255,7 @@
       padding-top: 15px;
       width: 190px;
       padding-bottom: 15%;
-   
+
       overflow: hidden;
       position: relative;
     }
@@ -258,7 +271,7 @@
 
     .About p {
       font-size: 22px;
-      padding-bottom: 20px;
+
     }
 
     .service-button:hover {
@@ -283,7 +296,7 @@
       }
 
       nav a {
-        font-size: 19px
+        font-size: 18px;
       }
     }
 
@@ -306,7 +319,7 @@
         margin-top: 1px solid #fff;
         background-color: #FE5825;
         color: #fff;
-        padding: 12x;
+        padding: 12px;
         text-align: center;
       }
 
@@ -327,11 +340,17 @@
       .slick-slide2 {
         display: none;
       }
-      header img{
-        width: 132px;
-        height: 125px;
+
+      .About p {
+        font-size: 16px;
+
       }
 
+      header img {
+        width: 112px;
+        height: 108px;
+      }
+      
       nav a {
         font-size: 13px
       }
@@ -353,7 +372,7 @@
       }
 
       .service {
-        font-size: 18px;
+        font-size: 17px;
       }
 
       .service-title {
@@ -363,22 +382,20 @@
       }
 
       .service-description {
-        font-size: 17px;
+        font-size: 15px;
         color: #333;
 
       }
 
       .service-button {
-        font-size: 14px;
+        font-size: 15px;
       }
 
       header {
         padding: 3px;
       }
 
-      header img {
-        width: 110px;
-      }
+     
 
       footer p {
         font-size: 10px;
@@ -387,10 +404,7 @@
         margin-right: 10px;
       }
 
-      .About {
-        height: 260px;
-        width: 362px;
-      }
+
 
       footer img {
         width: 60px;
@@ -419,7 +433,7 @@
 
 <body>
   <header>
-    <img src="./image/logo.png" alt="logo"> 
+    <img src="./image/logo.png" alt="logo">
   </header>
 
   <nav>
@@ -450,7 +464,8 @@
   <main id="t">
     <div class="About">
       <h1>About us?</h1>
-      <p> We are a company that offers professional cleaning service in the city of naples florida and nearby areas.
+      <p> We are a company that offers professional cleaning service <br> in the city of naples florida and nearby
+        areas.
         </h1>
       </p>
       <div class="container">
@@ -472,19 +487,23 @@
       <div class="service">
         <i class="service-icon"><img src="./image/equipo-de-limpieza.png" alt="limpieza dosmestica" width="116px"></i>
         <h3 class="service-title">Domestic cleaning</h3>
-        <p class="service-description">We offer high quality cleaning services for homes, offices and commercial premises.</p>
+        <p class="service-description">We offer high quality cleaning services for homes, offices and commercial
+          premises.</p>
         <a href="./contacto.html"> <button class="service-button">Get a free estimate</button></a>
       </div>
       <div class="service">
-        <i class="service-icon"><img src="./image/herramientas-de-limpieza.png" alt="limpieza de pisos" width="116px"></i>
+        <i class="service-icon"><img src="./image/herramientas-de-limpieza.png" alt="limpieza de pisos"
+            width="116px"></i>
         <h3 class="service-title">Floor cleaning</h3>
-        <p class="service-description">We perform floor and surface cleaning services to achieve an impeccable appearance with state-of-the-art technology.</p>
+        <p class="service-description">We perform floor and surface cleaning services to achieve an impeccable
+          appearance with state-of-the-art technology.</p>
         <a href="./contacto.html"> <button class="service-button">Get a free estimate</button></a>
       </div>
       <div class="service">
         <i class="service-icon"><img src="./image/fregona.png" alt="fregona" width="116px"></i>
         <h3 class="service-title">Polishing and shining of floors</h3>
-        <p class="service-description">We have specialized floor polishing and shining techniques to restore shine and beauty to your surfaces.</p>
+        <p class="service-description">We have specialized floor polishing and shining techniques to restore shine and
+          beauty to your surfaces.</p>
         <a href="./contacto.html"> <button class="service-button">Get a free estimate</button></a>
       </div>
       <div class="service">
@@ -516,9 +535,20 @@
       $('.slick-carousel').slick({
         dots: true,
         autoplay: true,
-        autoplaySpeed: 2700
+        autoplaySpeed: 2500,
       });
     });
+    var prevScrollPos = window.pageYOffset;
+
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        document.getElementById("header").style.top = "0";
+      } else {
+        document.getElementById("header").style.top = "-100px"; /* Ajusta este valor para controlar la distancia que se desplaza el encabezado */
+      }
+      prevScrollPos = currentScrollPos;
+    };
   </script>
 </body>
 
